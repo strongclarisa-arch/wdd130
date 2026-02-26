@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Nanum+Brush+Script&family=Story+Script&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
 
 body {
@@ -19,39 +22,92 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
-    background-color: gray;
+    background-color: darkorchid;
     padding: 2em;
 }
 
 nav a {
-    color: white;
+    color: lavender;
     text-decoration: none;
 }
 
-main {
+#intro {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    max-width: 1600px;
+    justify-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#Logo {
+    grid-column: 2/3;
+    border-radius: 50%;
+    border: 5px solid darkcyan;
+    object-fit: cover;
+    object-position: 50% 20%;
+    max-width: 300px;
+}
+
+#intro h1 {
+    grid-column: 2/3;
+    color: midnightblue;
+    text-align: center;
+    font-family: "Mystery Quest";
+    font-weight: 400;
+}
+
+#card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1EM;
     justify-items: center;
+    background-color: #1f7a8c;
+    grid-column: 1/4;
+    justify-items: center;
+    padding: 10px;
+}
+
+#card h2 {
+    text-align: center;
 }
 
 section#blue {
-    background-color: lightblue;
+    background-color: #bfdbf7;    
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding: 5px;
 }
 
 section#green {
-    background-color: lightgreen;
+    background-color: #bfdbf7;
     grid-column: 1/2;
     grid-row: 1/2;
+    padding: 5px;
 }
 
 section#red {
-    background-color: lightcoral;
+    background-color: #e1e5f2;
     grid-column: 2/3;
     grid-row: 1/2;
+    padding: 5px;
 }
 
-section#about {
-    grid-column: 1/4;
-    border: 3px solid black;
+#table {
+    display: grid;
+}
+
+section#about img {
+    border: 8px solid #c08497;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #c08497;
+    max-width: 400px;
+    margin: 15px;
+}
+
+footer {
+    background-color: darkorchid;
+    color: lavender;
+    height: 100px;
+    padding: 10px;
 }
