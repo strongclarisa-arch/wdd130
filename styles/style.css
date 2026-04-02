@@ -129,6 +129,20 @@ section#red {
     padding: 20px;
 }
 
+#table table {
+    border: 4px solid lavender;
+}
+
+form {
+    background-color: mediumslateblue;
+    border: 4px solid lavender;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: lavender;
+}
+
 section#about img {
     border: 8px solid #c08497;
     transition: transform .5s;
