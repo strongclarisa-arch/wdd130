@@ -152,6 +152,59 @@ section#about img {
     margin: 15px;
 }
 
+#challenges {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    margin: 20px;
+}
+
+#card1, #card2, #card3, #card4, #card5, #card6 {
+    border: 5px solid #1f7a8c;
+    border-radius: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+#card1:hover, #card2:hover, #card3:hover, #card4:hover, #card5:hover, #card6:hover {
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #0f5664;
+}
+
+#card1, #card3, #card5 {
+    background-color: #bfdbf7;
+}
+
+#card2, #card4, #card6 {
+    background-color: #e1e5f2;
+}
+
+#card1 a, #card2 a, #card3 a, #card4 a, #card5 a, #card6 a {
+    background-color: #1f7a8c;
+    color: #bfdbf7;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: #1f7a8c;
+    border-radius: 15px;
+}
+
+#card1 a:hover, #card2 a:hover, #card3 a:hover, #card4 a:hover, #card5 a:hover, #card6 a:hover {
+    background-color: #bfdbf7;
+    color: #1f7a8c;
+    border: #1f7a8c;
+    border-radius: 15px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #0f5664;
+}
+
 footer {
     background-color: darkorchid;
     color: lavender;
