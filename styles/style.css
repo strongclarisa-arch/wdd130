@@ -20,10 +20,11 @@ img {
 nav {
     border: 3px solid #4a4326;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     background-color: darkorchid;
     padding: 2em;
+    max-width: 100%;
 }
 
 nav a {
